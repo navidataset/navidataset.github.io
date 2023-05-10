@@ -1,6 +1,6 @@
-@article{ruiz2022dreambooth,
-  title={DreamBooth: Fine Tuning Text-to-image Diffusion Models for Subject-Driven Generation},
-  author={Ruiz, Nataniel and Li, Yuanzhen and Jampani, Varun and Pritch, Yael and Rubinstein, Michael and Aberman, Kfir},
-  booktitle={arXiv preprint arxiv:2208.12242},
-  year={2022}
+@article{jampani2023navi,
+  title={NAVI: Category-Agnostic Image Collections with High-Quality 3D Shape and Pose Annotations},
+  author={Jampani, Varun and Maninis, Kevis-Kokitsi and Engelhardt, Andreas and Truong, Karen and Karpur, Arjun and Sargent, Kyle and Popov, Stefan and Araujo, Andre and Martin-Brualla, Ricardo and Patel, Kaushal and Vlasic, Daniel and Ferrari, Vittorio and Makadia, Ameesh and Liu, Ce and Li, Yuanzhen and Zhou, Howard},
+  url={https://navidataset.github.io/},
+  year={2023}
 }

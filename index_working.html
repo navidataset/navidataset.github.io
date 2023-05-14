@@ -74,6 +74,7 @@
 
 <div class="content">
   <h2>Multi-View Image Collections</h2>
+  Most existing multi-view image collections for 3D reconstruction assume that standard structure from motion pipelines such as COLMAP works well to obtain high-quality camera poses. This may not be the case for casually captured images. In the NAVI dataset, we also captured and 3D annotated multi-view image collections that can help in further research on joint shape and camera pose estimation.
   <p> </p>
   <br>
   <img class="summary-img" src="./navidataset_files/NAVI_multi_view_samples.png" style="width:100%;"> <center> <h4>Sample multi-view image collections in the NAVI dataset which are captured with hand-held cameras in natural settings</h4> <br>
@@ -81,17 +82,18 @@
 
 <div class="content">
   <h2>Dense Pixel Correspondences</h2>
-  Given the high-quality shape annotations, we can compute dense per-pixel correspondences across different object images.
+  Given the high-quality shape annotations, we can compute dense per-pixel correspondences across different object images. This is in contrast to most existing correspondence datasets that use sparse keypoint annotations for evaluations.
   <p> </p>
   <br>
   <img class="summary-img" src="./navidataset_files/NAVI_samples.png" style="width:100%;"> <br>
 </div>
 
 <div class="content">
-  <h2>Monocular Depth and Foreground Segmentations</h2>
+  <h2>Derivative Annotations: Depths and Segmentations</h2>
+  We can also get high-quality derivative annotations such as object masks and metric depths given the ground-truth 2D-3D alignments in the NAVI dataset.
   <p> </p>
   <br>
-  <img class="summary-img" src="./navidataset_files/NAVI_depths_masks.png" style="width:100%;"> <br>
+  <img class="summary-img" src="./navidataset_files/NAVI_depths_masks.png" style="width:100%;"> <center> <h4>Sample NAVI images and the corresponding object segmentation masks and depth maps</h4><br>
 </div>
 
 <div class="content">

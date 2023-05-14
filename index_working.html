@@ -33,7 +33,7 @@
   <span style="font-size: 24px">Google
   </span></p>
   <br>
-  <img src="./navidataset_files/NAVI_teaser_1.png" class="teaser-gif" style="width:100%;"><br>
+  <img src="./navidataset_files/NAVI_teaser_1.png" class="teaser-gif" style="width:100%;"><center> <h4>NAVI dataset consists of both in-the-wild and multi-view image collecitons with high-quality aligned 3D shape ground-truths</h4></center><br>
     <font size="+2">
           <p style="text-align: center;">
             <a href="" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -49,17 +49,26 @@
 
 <div class="content">
   <h2>Dataset Highlights</h2>
+  NAVI dataset consists of casually captured image collections with high-quality 3D shape and pose annotations. The dataset consists of multi-view and in-the-wild image collections of 36 objects with around 10K images in total. Here are some key aspects of the dataset:
+    <ul style="list-style-type: circle;">
+      <li><strong>In-the-wild</strong>. In addition to typical multi-view object images, NAVI provides in-the-wild images collections where objects are captured under varying backgrounds, illuminations and cameras.</li>
+      <li><strong>Category-agnostic</strong>. Objects in the NAVI dataset are category-agnostic with image collections of toys and decoration items that do not have any category-specific shapes.</li>
+      <li><strong>Near-perfect 3D geometry</strong>. We use high-quality 3D scanners to get 3D shape ground-truth.</li>
+      <li><strong>Near-perfect camera poses</strong>. We obtain high-quality 3D camera pose annotations with manual 2D-3D alignment along with rigorous verification.</li>
+      <li><strong>Derivative annotations such as dense correspondences, depth etc</strong>. Given the near-perfect 3D shape and camera parameters, one could easily derive other high-quality annotations such dense pixel level correspondences, monocular depth, foreground segmentation etc.</li>
+    </ul>
   <p>
   </p>
   <br>
-  <img class="summary-img" src="./navidataset_files/NAVI_samples.png" style="width:100%;"> <br>
+  <img class="summary-img" src="./navidataset_files/NAVI_samples.png" style="width:100%;"> <center> <h4>Sample NAVI images and the corresponding 3D shape alignments</h4></center><br>
 </div>
 
 <div class="content">
   <h2>Wild Image Collections</h2>
+
   <p> </p>
   <br>
-  <img class="summary-img" src="./navidataset_files/NAVI_wild_samples.png" style="width:100%;"> <br>
+  <img class="summary-img" src="./navidataset_files/NAVI_wild_samples.png" style="width:100%;"><center> <h4>Sample in-the-wild image collections in NAVI dataset with varying backgrounds, illuminations and cameras</h4> <br>
 </div>
 
 <div class="content">
@@ -78,9 +87,22 @@
 
 <div class="content">
   <h2>Monocular Depth and Foreground Segmentations</h2>
+  Given the high-quality shape annotations, we can compute dense per-pixel correspondences
   <p> </p>
   <br>
   <img class="summary-img" src="./navidataset_files/NAVI_samples.png" style="width:100%;"> <br>
+</div>
+
+<div class="content">
+  <h2>BibTex</h2>
+  If you find this dataset useful, please consider citing our work:
+  <code> @article{jampani2023navi,<br>
+  &nbsp;&nbsp;title={NAVI: Category-Agnostic Image Collections with High-Quality 3D Shape and Pose Annotations},<br>
+  &nbsp;&nbsp;author={Jampani, Varun and Maninis, Kevis-Kokitsi and Engelhardt, Andreas and Truong, Karen and Karpur, Arjun and Sargent, Kyle and Popov, Stefan and Araujo, Andre and Martin-Brualla, Ricardo and Patel, Kaushal and Vlasic, Daniel and Ferrari, Vittorio and Makadia, Ameesh and Liu, Ce and Li, Yuanzhen and Zhou, Howard},<br>
+  &nbsp;&nbsp;booktitle={arXiv preprint},<br>
+  &nbsp;&nbsp;url={https://navidataset.github.io/},<br>
+  &nbsp;&nbsp;year={2023}<br>
+  } </code>
 </div>
 
 <!-- <div class="content" id="acknowledgements">

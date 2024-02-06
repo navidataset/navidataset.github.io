@@ -38,11 +38,12 @@
           <p style="text-align: center;">
             <a href="https://arxiv.org/abs//2306.09109" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="navidataset_files/NAVI_supplemental_revision_camera_ready.zip" target="_blank">[Supplementary]</a> &nbsp;&nbsp;&nbsp;&nbsp;
-	          <a href="https://github.com/google/navi" target="_blank">[Dataset]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	          <a href="https://github.com/google/navi" target="_blank">[Dataset**]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="navidataset_files/LICENSE.txt" target="_blank">[License]</a> &nbsp;&nbsp;&nbsp;&nbsp;
 	          <a href="navidataset_files/bibtex.txt" target="_blank">[BibTeX]</a>
           </p>
     </font>
+    <div>**The dataset has been updated with video captures.</div>
 </div>
 <div class="content">
   <h2 style="text-align:center;">Abstract</h2>
@@ -53,7 +54,7 @@
 
 <div class="content">
   <h2>Dataset Highlights</h2>
-  NAVI dataset consists of casually captured image collections with high-quality 3D shape and pose annotations. The dataset consists of multi-view and in-the-wild image collections of 36 objects with around 10K images in total. Here are some key aspects of the dataset:
+  NAVI dataset consists of casually captured image collections with high-quality 3D shape and pose annotations. The dataset consists of multi-view and in-the-wild image collections, as well as videos of 36 objects with around 29K images in total. Here are some key aspects of the dataset:
     <ul style="list-style-type: circle;">
       <li><strong>In-the-wild</strong>. In addition to typical multi-view object images, NAVI provides in-the-wild images collections where objects are captured under varying backgrounds, illuminations and cameras.</li>
       <li><strong>Category-agnostic</strong>. Objects in the NAVI dataset are category-agnostic with image collections of toys and decoration items that do not have any category-specific shapes.</li>
@@ -81,8 +82,35 @@
   Most existing multi-view image collections for 3D reconstruction assume that standard structure from motion pipelines such as COLMAP works well to obtain high-quality camera poses. This may not be the case for casually captured images. In the NAVI dataset, we also captured and 3D annotated multi-view image collections that can help in further research on joint shape and camera pose estimation.
   <p> </p>
   <br>
-  <img class="summary-img" src="./navidataset_files/NAVI_multi_view_samples.png" style="width:100%;"> <center> <h4>Sample multi-view image collections in the NAVI dataset which are captured with hand-held cameras in natural settings</h4> <br>
+  <img class="summary-img" src="./navidataset_files/NAVI_multi_view_samples.png" style="width:100%;">
+  <center>
+    <h4>Sample multi-view image collections in the NAVI dataset which are captured with hand-held cameras in natural settings</h4>
+  <br>
 </div>
+
+<div class="content">
+  <h2>Video Scenes</h2>
+  Similar to multi-view image collections, we collected and annotated video captures of scenes. Videos naturally contain blurrier frames than image collections, which can provide different
+  challenges for 3D reconstruction.
+  <p> </p>
+  <br>
+  <center>
+    <video style="width: 24%" autoplay muted loop>
+      <source src="./navidataset_files/videos/dino_4_down.mp4" type="video/mp4"> 
+    </video>
+    <video style="width: 24%" autoplay muted loop>
+      <source src="./navidataset_files/videos/lion_down.mp4" type="video/mp4"> 
+    </video>
+    <video style="width: 24%" autoplay muted loop>
+      <source src="./navidataset_files/videos/dollhouse_down.mp4" type="video/mp4"> 
+    </video>
+    <video style="width: 24%" autoplay muted loop>
+      <source src="./navidataset_files/videos/flower_down.mp4" type="video/mp4"> 
+    </video>
+    <h4>Sample video scenes in the NAVI dataset</h4>
+  <br>
+</div>
+
 
 <div class="content">
   <h2>Dense Pixel Correspondences</h2>
